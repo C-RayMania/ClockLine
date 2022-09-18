@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+  
+li {
+    padding: 0 96px;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 1rem;
+    transition: 0.15s;
+    float: left;
+    font-size: 24px;
+    border-radius: 6px;
+}
+li a.brand {
+    font-family: 'Bungee Spice', cursive;
+}
+li a.github {
+    float: right;
+    color: #fff;
+}
+  
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #282828;
+}
+
+section.timers {
+    text-align: center;
+    margin-top: 48px;
+}
+
+section.timers #FNtimer {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 8vw;
+}
+section.timers .FNcountdown {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+section.timers #F1R17 {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 5vw;
+    line-height: 4rem;
+    background: -webkit-linear-gradient(#ace6ff, #0072c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section.timers #F1R18 {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 5vw;
+    line-height: 4rem;
+    background: -webkit-linear-gradient(#ace6ff, #0072c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+section.timers #F1R19 {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 5vw;
+    line-height: 4rem;
+    background: -webkit-linear-gradient(#ace6ff, #0072c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 6px;
+    margin: 0;
+    background-color: #282828;
+}
+
+@media screen and (max-width: 600px) {
+    li {
+        padding: 0 18px;
+        float: center;
+    }
+    li a {
+        float: center;
+    }
+}

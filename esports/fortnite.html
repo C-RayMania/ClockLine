@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fortnite Countdown Timer(s) for upcoming Fortnite Seasons, Live Events and more.">
+    <meta name="keywords" content="Fortnite, Chapter 3, Season 5, eSports, Countdown, Timer, Battle Pass, V-bucks">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/blog.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/371896796d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Spice&family=Gantari:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Fortnite Timer(s) - ClockLine</title>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HZS40BG986"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HZS40BG986');
+</script>
+<style>
+    section.timers {
+        border: 2px solid #8b1eff;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h2 {
+        border-left: 4px solid #8b1eff;
+        padding: 0 14px;
+        margin: auto 96px;
+    }
+    h3 {
+        border-left: 3px solid #8b1eff;
+        padding: 0 14px;
+        margin: auto 96px;
+    }
+    ul.list {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    ul.list li {
+        list-style-type: disc;
+    }
+    @media screen and (max-width: 600px) {
+        h2, h3 {
+            margin: auto 16px;
+        }
+    }
+</style>
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+        $("#nav-placeholder").load("/asset/nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+    <br>
+    <h2>Fortnite Chapter 3 Season 5 Countdown</h2><br>
+    <section class="timers">
+        <!-- Featured Timer -->
+        <div class="featured">
+        <div id="featured"></div>
+        Until <span style="font-weight: 800;text-decoration: underline 2px #8b1eff;">Chapter 3 Season 5</span> (Season 23)
+        </div>
+        <br><br>
+    </section>
+    <br>
+    <h3>Everything New in Chapter 3 Season 4:</h3>
+        <p>
+            <ul class="list">
+        <li><b>Chrome Splash</b>: Allows you to phase through walls and builds.</li><br>
+        <li>Become a Blob of <b>Chrome</b> by throwing down a <b>Chrome Splash</b> which makes you immune to fire and fall damage and gives the ability to dash mid-air and phase through any walls.</li><br>
+        <li><b>D-Launcher</b>: Helps gain higher ground by seeking "safety" in the POIs which have been given hot air ballons to float in air.</li><br>
+        <li>EvoChrome Weapons: The <b>EvoChrome Shotgun</b> and <b>EvoChrome Burst Rifle</b>, obtained from <b>Chrome Chests</b>, increase in rarity the more one damages opponents with them. Can go from Uncommon to Mythic</li>
+            </ul>
+        </p>
+
+    <footer><i class="fa fa-copyright"></i> 2022 C-Ray Mania</footer>
+
+    <script class="featured">
+        // Set Date
+        var countDownDate = new Date("Dec 03, 2022 00:00:00 GMT+00:00").getTime();
+
+        //Update count every 1 second
+        var x = setInterval(function() {
+            //Get today's date and time
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            // Time Calculation
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result
+            document.getElementById("featured").innerHTML = days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
+
+            // Countdown finished text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("featured").innerHTML = "Server Downtime";
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

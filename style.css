@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 1;
+}
+a {
+    color: #ffffff;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Spice&family=Gantari:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+section.timers .featured {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+section.timers #featured {
+    font-family: 'Bungee Spice', cursive;
+    font-size: 6vw;
+}
+
+section.timers .secondary {
+    text-align: center;
+}
+section.timers #secondary {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 4vw;
+    line-height: 4rem;
+    background: -webkit-linear-gradient(#ace6ff, #0072c4);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    padding: 6px;
+    margin: 0;
+    background-color: #282828;
+}
+
+@media screen and (max-width:600px) {
+    section.timers #featured {
+        font-size: 10vw;
+    }
+    section.timers #secondary {
+        font-size: 8vw;
+    }
+}
